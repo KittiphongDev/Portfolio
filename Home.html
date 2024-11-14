@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pxte's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Geist+Mono:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script type="text/javascript">
+        function toggle(image){
+            var blur = document.getElementById('blur')
+            blur.classList.toggle('active')
+            var popup = document.getElementById('popup')
+            popup.classList.toggle('active')
+            var popupimg = document.querySelector('.popupimg');
+            popupimg.src = image.src;
+        }
+    </script>
+    <script src="scroll_script.js"></script>
+    <div class="background" id="background">
+    <div id="popup">
+        <img class="popupimg" src="certificate/certificate1.png" alt="" href="" onclick="toggle()">
+    </div>
+    <div id="blur">
+    <script  src="./script.js"></script>
+    <nav>
+        <div class="container">
+            <div class="menucon">
+                <a id="logo" href="Home.html">PXTE</a>
+                <ul class="menu">
+                    <li><a href="#background">HOME</a></li>
+                    <li><a href="#information">SKILLS</a></li>
+                    <li><a href="#overview">CERTIFICATE</a></li>
+                    <li><a href="#project">PROJECT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="intro" id="intro">
+        <div class="container">
+            <div class="introcon">
+                <div class="profiletext">
+                    <div class="popupanimation dev"><i class="fa fa-code fa-2x" aria-hidden="true"></i><p>&nbsp;Developer</p></div>
+                    <h3 class="popupanimation">Hi, I'm <span>PETE</span><br></h3>   
+                    <p class="popupanimation">Welcome to my online portfolio website!<br> Here, I showcase my development<br> skills, achievements, and projects.</p>
+                    <a href="https://www.instagram.com/_pxte.p/" target="_blank"><i class="popupanimation fa fa-instagram fa-2x iconmodify" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100015851623069" target="_blank"><i class="popupanimation fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+                    <a href="mailto:kittiphongss63@gmail.com" target="_blank"><i class="popupanimation fa fa-envelope fa-2x" aria-hidden="true"></i></a>
+                    <a href="https://github.com/pxtep" target="_blank"><i class="popupanimation fa fa-github fa-2x iconmodify" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="information"></section>
+    <section class="information">
+        
+        <div class="container">
+            <div class="infocon">
+                <div class="skilltitle showanimation"><h1>- SKILLS -</h1></div>
+                <table class="skilltable showanimation">
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="skill/uxui.png" alt="">
+                                <h3>UX/UI</h3>
+                                <h3>Medium</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="skill/unity.png" alt="">
+                                <h3>Unity</h3>
+                                <h3>Skilled</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="skill/python.png" alt="">
+                                <h3>Python</h3>
+                                <h3>Skilled</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="skill/android.png" alt="">
+                                <h3>android</h3>
+                                <h3>Medium</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="skill/graphic.png" alt="">
+                                <h3>Graphics</h3>
+                                <h3>Medium</h3>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="skill/Blender.png" alt="" id="blender">
+                                <h3>Blender</h3>
+                                <h3>Medium</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="skill/csharp.png" alt="">
+                                <h3>c#</h3>
+                                <h3>Medium</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="skill/cpp.png" alt="" id="cpp">
+                                <h3>C++</h3>
+                                <h3>basic</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="skill/c.png" alt="" id="c">
+                                <h3>c</h3>
+                                <h3>basic</h3>
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <img src="skill/roblox.png" alt="">
+                                <h3>roblox dev</h3>
+                                <h3>Medium</h3>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="overview"></section>
+    <section class="overview">
+        <div class="container">
+            <div class="overcon">
+                <div class="overtitle showanimation">
+                    <h1 id="certificate">- CERTIFICATE -</h1>
+                </div>
+                <div class="overviewlist showanimation">
+                     <img class="item" id="b1" src="certificate/certificate1.png" alt="" href="#" onclick="toggle(this)">
+                     <img class="item" id="b2" src="certificate/certificate2.png" alt="" href="#" onclick="toggle(this)">
+                     <img class="item" id="b3" src="certificate/certificate3.png" alt="" href="#" onclick="toggle(this)">
+                     <img class="item" id="b4" src="certificate/certificate4.png" alt="" href="#" onclick="toggle(this)">
+                     <img class="item" id="b5" src="certificate/certificate5.jpg" alt="" href="#" onclick="toggle(this)">
+                     <img class="item" id="b6" src="certificate/certificate6.png" alt="" href="#" onclick="toggle(this)">
+                     <img class="item" id="b7" src="certificate/certificate7.png" alt="" href="#" onclick="toggle(this)">
+                </div>
+                <div class="suggest showanimation">
+                    <h4>&nbsp;- hover to pause | click on image to enlarge -</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="navigation.js"></script>
+    <script src="popup_script.js"></script>
+
+
+    <section class="project">
+        <div class="container">
+        <section class="projecttitle" id="project">
+            <h1 class="showanimation">- PROJECT -</h1>
+        </section>
+        <table class="projecttable">    
+        <tr>
+            <td class="projectbox showanimation">
+                <img src="project/whiskered.png" alt="" class="projectimg">
+                <div class="projectinfo">
+                    <h3>Whiskered Odyssey</h3>
+                    <p>3D - 2 player puzzle game in the fantasy world with realistic graphics, intense story and challanging puzzle.</p>
+                </div>
+                <a href="https://supakorn-pomprasirt.itch.io/tracesofmemories" class="button" target="_blank">Download</a>
+            </td>
+            <td class="projectbox showanimation">
+                <img src="project/sukjailogo.jpg" alt="" class="projectimg">
+                <div class="projectinfo">
+                    <h3>Sukjai App</h3>
+                    <p>an android application app for hospital queueing. using firebase firestore as a database to store patient's information.</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1U3kj9wEPkLh82hFwS8ukiEO4VxWNTMn7/view?usp=sharing" target="_blanks" class="button">Download</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="space"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="projectbox showanimation">
+                <img src="project/frontend.png" alt="" class="projectimg">
+                <div class="projectinfo">
+                    <h3>Front-end, web design</h3>
+                    <p>a simple web UX/Ui design for improving front-end skills </p>
+                </div>
+                <a href="https://pxtep.github.io/webtest" target="_blank" class="button">View</a>
+            </td>
+            <td class="projectbox showanimation ">
+                <img src="project/dev.jpg" alt="" class="projectimg">
+                <div class="projectinfo">
+                    <h3>In process...</h3>
+                    <p>an indie game development project for selling on steam.</p>
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footcon">
+                <h3>Thanks for visiting my site, Work contact : kittiphongss63@gmail.com</h3>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+</body>
+</html>
