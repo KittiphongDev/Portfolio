@@ -7,20 +7,21 @@
     background-color: #0f0f0f;
 }
 .container{
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
 }
 html{
     scroll-behavior: smooth !important;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 html,body{
     width: 100%;
     height: 100%;
+    padding: 0;
+    margin: 0;
 }
 .fa{
     user-select: none;
-    /*scale: 2;*/
     margin: 3rem 4rem 0 .5rem ;
     transition: transform .3s ease,
     text-shadow .2s ease;
@@ -56,7 +57,7 @@ nav{
     user-select: none;
     font-family: "Anton SC", sans-serif;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 5vh;
     color: white;
     border: none;
 }
@@ -119,11 +120,16 @@ nav{
     width:65%;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     user-select: none;
     line-height: 1.4;
     text-shadow: 4px 4px 8px black;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
 }
 .profiletext span{
     color: aquamarine;
@@ -131,7 +137,7 @@ nav{
 .profiletext h3{
     display: inline-block;
     margin-bottom: 1rem;
-    font-size: 80px;
+    font-size: 10vh;
     transition: transform 0.2s ease;
 }
 .profiletext h3:hover{
@@ -140,7 +146,7 @@ nav{
 .profiletext p{
     text-shadow: 6px 6px 6px black;
     display: inline-block;
-    font-size: 25px;
+    font-size: 3.5vh;
     transition: transform 0.2s ease;
 }
 .profiletext p:hover{
@@ -155,13 +161,13 @@ nav{
     text-align: center;
     font-family: "Funnel Sans", sans-serif;
     font-weight: 100;
-    font-size: 28px;
+    font-size: 5vh;
 }
 .dev i{
     color: rgb(164, 164, 164);
     pointer-events: none;
     user-select: none;
-    scale: .8;
+    font-size: 5vh;
     margin: 0;
     padding: 0;
 }
@@ -174,45 +180,60 @@ nav{
     font-family: "Poppins", sans-serif;
     font-size: 50px;
     color: white;
+    margin-bottom: 5%;
+    transition: transform .2s ease;
+}
+.skilltitle h1:hover{
+    transform: scale(1.1);
 }
 .information{
     min-height: 100vh;
-}
-.infocon{
-    width: 100%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center ;
+    user-select: none;
+}
+.infocon{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    margin:5rem 0rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .skilltable{
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 40px 40px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.skilltable div{
-    width: 200px;
-    height: 200px;
-    justify-items: center;
-    background-color: #c8c8c8;
+.skilltable img{
+    width: 70px;
+    height: 70px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillbox{
+    width: 150px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    margin: 1rem 2rem;
     border-radius: 25px;
     box-shadow: 0 0 12px aquamarine;
     transition: transform .2s ease;
 }
-.skilltable div:hover{
-    transform: scale(1.03);
+.skillbox:hover{
+    transform: translateY(-4px);
 }
-.skilltable img{    
-    margin-top: 2.5rem;
-    width: 60px;
-    height: 60px;
-    margin-bottom: .5rem;
-}
-.skilltable h3{
-    font-family: "Poppins", sans-serif;
-}
-
 
 
 /* ----------- information -----------*/
@@ -220,9 +241,16 @@ nav{
 
 /* ----------- overview slide -----------*/
 
+.overcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .overviewlist{
+    scale: 1.2;
     margin-top: 5rem;
-    width: 100%;
+    min-width: 1000px;
     max-width: 1535px;
     margin-inline: auto;
     position: relative;
@@ -312,10 +340,11 @@ nav{
 }
 .overview{
     user-select: none;
-    padding-top: 6rem;
-    padding-bottom: 12rem;
     background-color:rgb(6, 13, 19);
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .overtitle{
     user-select: none;
@@ -324,7 +353,6 @@ nav{
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    margin-bottom: 7rem;
     font-size: 30px;
 }
 .overtitle h1{
@@ -373,47 +401,56 @@ nav{
 /* ----------- project -----------*/
 
 
-#project{
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-    justify-items: center;
+.projectcon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;
+}
+.projecttitle{
+    font-size: 50px;
     color: white;
 }
-#project h1{
-    font-size: 50px;
-}
 .project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Poppins", sans-serif;
     max-width: 100%;
     min-height: 100vh;
     background-color: rgb(4, 7, 11);
-    padding-bottom: 5rem;
 }
 .projecttable {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 160px 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .projectbox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    width: 300px;
+    height: 450px;
     background-color: #1e1e1e;
     border-radius: 30px;
-    padding: 2.5rem;
     box-shadow: 4px 4px 8px black,
     4px 4px 8px black;
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
     vertical-align: top;
     color: #ffffff;
-    width: 200px;
-    flex-grow: 0;
-    flex-shrink: 1;
 }
 
 .projectimg {
     margin-top: 1rem;
-    width: 100%;
-    height: 170px;
+    width: 240px;
+    height: 135px;
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -428,7 +465,7 @@ nav{
     font-size: 1rem;
     color: #d1d1d1;
     line-height: 1.5;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.2rem;
 }
 .button{
     border: 1px solid white;
@@ -438,6 +475,8 @@ nav{
     color: white;
     transition: background-color .2s ease,
     color .2s ease;
+    position:fixed;
+    bottom: 1.5rem;
 }
 .button:hover{
     background-color: white;
@@ -449,7 +488,7 @@ nav{
 
 /* ----------- project -----------*/
 
-/* ----------- project -----------*/
+/* ----------- footer -----------*/
 
 .footcon{
     font-family: "Poppins", sans-serif;
@@ -460,7 +499,7 @@ nav{
     font-size: 13px;
 }
 
-/* ----------- project -----------*/
+/* ----------- footer -----------*/
 
 /* ----------- animation -----------*/
 
