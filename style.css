@@ -13,6 +13,8 @@
 html{
     scroll-behavior: smooth !important;
     overflow-x: hidden;
+}
+html,body{
     width: 100%;
     height: 100%;
 }
@@ -404,6 +406,8 @@ nav{
     vertical-align: top;
     color: #ffffff;
     width: 200px;
+    flex-grow: 0;
+    flex-shrink: 1;
 }
 
 .projectimg {
