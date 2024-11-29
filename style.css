@@ -541,3 +541,143 @@ nav{
 }
 
 /* ----------- animation -----------*/
+
+
+@media screen and (max-width: 600px){
+
+    nav{
+        padding: .5rem 0;
+        background-color: #0f0f0f;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width:auto;
+    }
+    .menu li{
+        margin:  15px;
+        
+    }
+    .menucon{
+        justify-content: center;
+    }
+    .intro{
+        background-image: url(smallerbg.png);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        max-width: 100%;
+        min-height: 100vh;
+    }
+    #logo{
+        user-select: none;
+        font-family: "Anton SC", sans-serif;
+        text-decoration: none;
+        font-size: 3vh;
+        color: white;
+        border: none;
+        margin-left: 20px;
+        display: none;
+    }
+    .container{
+        max-width: 600px;
+    }
+    .profiletext {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin:0 ;
+        padding:3rem 0 0 3rem;
+    }
+    .profiletext h3{
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        font-size: 5.5vh;
+        transition: transform 0.2s ease;
+    }
+    .profiletext span{
+        font-size: 100px;
+        line-height: 90px;
+        text-align: start;
+    }
+    .profiletext h3 br{
+        display: none;
+    }
+    .profiletext h3:hover{
+        transform: scale(1.02);
+    }
+    .profiletext p{
+        text-shadow: 6px 6px 6px black;
+        display: none;
+        font-size: 13px;
+        transition: transform 0.2s ease;
+    }
+    .profiletext p:hover{
+        transform: scale(1.02);
+    }
+    .profiletext a{
+        color: white;
+        padding: 0 50px 0 0;
+        margin: 0;
+        width: 40px;
+        height: 30px;
+    }
+    .dev{
+        display: flex;
+    }
+    .dev p{
+        color: rgb(164, 164, 164);
+        display: inline;
+        text-align: center;
+        font-family: "Funnel Sans", sans-serif;
+        font-weight: 100;
+        font-size: 2vh;
+    }
+    .dev i{
+        color: rgb(164, 164, 164);
+        pointer-events: none;
+        user-select: none;
+        margin: 0;
+        padding: 0;
+        font-size: 2.5vh;
+    }
+    .iconmodify,.contact .fa{
+        font-size: 25px;
+        padding: 5px;
+    }
+    .contact i{
+        margin: .5rem 0;
+        padding: 0;
+    }
+    .suggest{
+        font-size: 10px;
+    }
+    
+
+    .skillbox{
+        width: 100px;
+        height: 120px;
+    }
+    .skillbox img{
+        width: 50px;
+        height: 50px;
+    }
+    .skillbox h3{
+        font-size: 12px;
+    }
+
+    .projectbox {
+        width: 270px;
+        height: 410px;
+    }
+    .projectimg{
+        width: 200px;
+        height: 115px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px){
+    
+}
